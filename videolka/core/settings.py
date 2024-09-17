@@ -51,9 +51,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'core.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -61,9 +58,6 @@ DATABASES = {
     }
 }
 
-
-# Password validation
-# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -81,9 +75,6 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-# Internationalization
-# https://docs.djangoproject.com/en/3.2/topics/i18n/
-
 LANGUAGE_CODE = 'ru'
 
 TIME_ZONE = 'Europe/Moscow'
@@ -95,4 +86,10 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / '/static'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / '/media'
+
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
