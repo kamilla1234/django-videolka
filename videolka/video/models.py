@@ -5,3 +5,6 @@ class Video(models.Model):
     description = models.TextField()
     thumbail = models.ImageField(upload_to="videos/thumbnails")
     source = models.FileField(upload_to="videos")
+
+    def __str__(self):
+        return f"{self.id} - {self.title}"

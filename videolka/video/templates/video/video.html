@@ -5,7 +5,9 @@
     <title>Videolka - {{ video.title }}</title>
 </head>
 <body>
-    <h1> {{ video.title }} </h1>
-    <video src="{{ video.source.url }}" style="width: 250px"></video>
+    <div style="display: flex;">
+    <img src = "{{ video.thumbail.url }}" alt="{{ video.title }}">
+    <video controls src="{{ video.source.url }}" style="width: 250px"></video>
+    </div>
 </body>
 </html>
