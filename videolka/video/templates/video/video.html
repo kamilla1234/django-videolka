@@ -1,13 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Videolka - {{ video.title }}</title>
+    <link rel="stylesheet" href="{% static 'video/style.css' %}">
 </head>
 <body>
-    <div style="display: flex;">
-    <img src = "{{ video.thumbail.url }}" alt="{{ video.title }}">
-    <video controls src="{{ video.source.url }}" style="width: 250px"></video>
+    <div class="container">
+        <p>{{ video.title }}</p>
+        <img src = "{{ video.thumbail.url }}" alt="{{ video.title }}">
+        <video controls src="{{ video.source.url }}" style="width: 250px"></video>
     </div>
 </body>
 </html>

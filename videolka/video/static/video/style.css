@@ -1,0 +1,13 @@
+div {
+display: flex;
+flex-direction: column;
+gap: 10px;
+padding: 10px;
+border: 1px solid #000;
+border-radius: 15px;
+width: min-content;
+}
+
+img{
+width: 250px;
+}
