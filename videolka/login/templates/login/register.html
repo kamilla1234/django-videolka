@@ -5,6 +5,12 @@
     <title>Register</title>
 </head>
 <body>
-
+    <h1>Зарегистрироваться</h1>
+    <form action="/login" method="post">
+        {% csrf_token %}
+        <input id="username" placeholder="name" type="text">
+        <input id="password" placeholder="password" type="password">
+        <button type="submit">Авторизоваться</button>
+    </form>
 </body>
 </html>
